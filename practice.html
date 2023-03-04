@@ -1,0 +1,707 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>PRACTICE WEB</title>
+</head>
+<body>
+    <H1>WEB TECHNOLOGY</H1>
+    <H2>WEB TECHNOLOGY</H2>
+    <H3>WEB TECHNOLOGY</H3>
+    <H4>WEB TECHNOLOGY</H4>
+    <H5>WEB TECHNOLOGY</H5>
+    <H6>WEB TECHNOLOGY</H6>
+    <p><strong>Hello everyone!Welcome to the class on web technologies.</strong><em>My name is Shruthi G S. </em><mark> I will be taking a seminar on basics of web development,</mark>mainly focusing on HTML and its features.<br>
+    </p><HR>
+    <ol>
+        <p>K-POP BANDS:-</p>
+        <li>BTS</li>
+        <li>Blackpink</li>
+        <li>Tomorrow X Together</li>
+        <li>ITZY</li>
+        <li>Straykids</li>
+        <li>Twice</li>
+        <li>Exo</li>
+        <li>Red velvet</li>
+        <li>Enhyphen</li>
+        <li>Seventeen</li>
+    </ol><hr>
+    <table BORDER="1" ALIGN="CENTER">
+        <tr>
+            <th colspan="4">Famous BTS songs by category</th>
+        </tr>
+        <tr>
+            <th>G.O.A.T</th>
+            <th>Cheerful</th>
+            <th>Silent/Melodious</th>
+            <th>Energetic</th>
+        </tr>
+        <tr>
+            <td>DYNAMITE</td>
+            <td>PERMISSION TO DANCE</td>
+            <TD>SPRING DAY</TD>
+            <TD>FIRE</TD>
+        </tr>
+        <TR>
+            <TD>BUTTER</TD>
+            <TD>FRIENDS</TD>
+            <TD>HEARTBEAT</TD>
+            <TD>NOT TODAY</TD>
+        </TR>
+        <TR>
+            <TD>BLOOD SWEAT & TEARS</TD>
+            <TD>HOME</TD>
+            <TD>BUTTERFLY</TD>
+            <TD>RUN BTS</TD>
+        </TR>
+        <TR>
+            <TD>FAKE LOVE</TD>
+            <TD>BOY WITH LUV</TD>
+            <TD>YET TO COME</TD>
+            <TD>MIC DROP</TD>
+        </TR>
+    </table><HR>
+    <UL>
+        <P><em>BTS FANCHANT</em></P>
+        <LI>KIM NAMJOON</LI>
+        <LI>KIN SEOKJIN</LI>
+        <LI>MIN YOONGI</LI>
+        <LI>JUNG HOSEOK</LI>
+        <LI>PARK JIMIN</LI>
+        <LI>KIM TAEHYUNG</LI>
+        <LI>JEON JUNGKOOK</LI>
+        <LI><strong><mark>BTS</mark></strong></LI>
+    </UL>
+</body>
+</html>
+-->
+
+
+<!--
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const arr=[1,2,3,4,5];
+            let sum=0;
+            for(let i=0;i<arr.length;i++)
+            {
+                sum+=arr[i];
+            }
+            document.write("sum: "+sum);
+        </script>
+    </body>
+</html>
+
+
+
+<!doctype html>
+<html>
+    <body>
+        <script>
+            const arr=[];
+            size=+prompt("Enter size of array");
+            for(let i=0;i<size;i++)
+            {
+            arr[i]=+prompt("Enter array elements");
+            }
+            for(let i=0;i<=arr.length-1;i++)
+            {
+                for(let j=0;j<=arr.length-1-i;j++)
+                {
+                    if(arr[j]>arr[j+1])
+                    {
+                        let temp;
+                        temp=arr[j]
+                        arr[j]=arr[j+1];
+                        arr[j+1]=temp;
+                    }
+                }
+            }
+            document.write("Ascending order:")
+                document.write(arr);
+
+        </script>
+    </body>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title>School WebSite</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+            <!--<link rel="stylesheet" href="style.css"> not required-->
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:'Poppins',sans-serif;
+            background-color:white;
+        }
+        nav{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            align-items:center;
+            padding: 1vw 8vw;
+            box-shadow:2px 2px 10px rgb(0,0,0,0.15);
+        }
+        nav img{
+            width:150px;
+            cursor:pointer;
+        }
+        nav .navigation ul{
+            display:flex;
+            justify-content:flex-end;
+            align-items: center;
+        }
+        nav .navigation ul li{
+            list-style:none;
+            margin-left:30px;
+        }
+        nav .navigation ul li a{
+            text-decoration:none;
+            color:rgb(21,21,100);
+            font-size:20px;
+            font-weight:500;
+            transition:0.3s ease;
+        }
+        nav .navigation ul li a:hover{
+            color:blue;
+        }
+        .heading{
+            margin: auto;
+            text-align: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}   
+.time{
+  margin:auto;
+  text-align: center;
+  background-color:rgb(255,170,0);
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.vision{
+	margin:auto;
+	background-color:rgb(79, 153, 250);
+	padding:3% ;
+	color:white;
+}
+.vision p{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.AboutUs{
+	margin:auto;
+  text-align: center;
+	padding:3% ;
+
+}
+table,th,td{
+	margin:auto;
+	border:double;
+	text-align:center;
+	background-color:azure;
+}
+.AboutUs table{
+  width: 50%;
+  height: auto;
+}
+td{
+  font-size: 18px;
+}
+footer {
+  display: flex;
+  background-color: #717171;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 48px;
+  width: 48px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.contactImage{
+  width: 30%;
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+}
+.leftcolumn{
+  margin-left: 10%;
+  width:30%;
+  text-align:center;
+  float: left;
+}
+.address{
+  width: 50%;
+  float: none;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+}
+.rightcolumn{
+  margin-right: 10%;
+  width: 30%;
+  text-align: center;
+  float: right;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn, .center {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navigation a {
+    float: none;
+    width: 100%;
+  }
+}
+h2{
+	text-align:center;
+}
+.obj{
+  text-align: justify;
+  margin-top: 30px;
+  padding-right:15%;
+  padding-left: 15%;
+  font-size: 20px;
+  background-color: white;
+}
+.AboutUs img{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
+}
+p{
+  font-size: 20px;
+  padding-right:15%;
+  padding-left: 15%;
+  text-align: justify;
+}
+    </style>
+    </head>
+    <body>
+        <header>
+            <marquee behavior="scroll" direction="right" style="font-family:'Poppins' ,sans-serif;font-size:24px;color:black;">
+            Welcome to Govt Kannada Higher Primary School No. 26
+            </marquee>
+        </header>
+        <nav>
+            <img src="C:\Users\Lenovo\Documents\shruthi\java\images\govt image.jpeg" width="180px" height="100px" alt="School-WebSite">
+                <div class="navigation">
+                     <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a  href="#facilities">Facilities</a></li>
+                        <li ><a href="#achievements">Activities</a></li>
+                        <li ><a  href="#admission">Achievements</a></li>
+                        <li ><a  href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+        </nav>
+            <div class="heading">
+            <h1 >Govt. Kannada Higher Primary School No. 26<br></h1>
+            <h3>Vishweshwaraya Nagar, Sadashiv Nagar, Belagavi, Karnataka - 590019</h3> 
+            </div>
+<section id="home">
+	<div class="Home">
+    <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="C:\Users\Lenovo\Documents\shruthi\java\images\school1.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="C:\Users\Lenovo\Documents\shruthi\java\images\school2.jpeg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="C:\Users\Lenovo\Documents\shruthi\java\images\school3.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="C:\Users\Lenovo\Documents\shruthi\java\images\school4alt.jpeg" style="width:100%">
+      </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div> 
+    <div class="time">
+        <h2>SCHOOL TIMINGS : 10:00 AM to 04:45 PM</h2>
+    </div>
+	<div class="vision" style="text-align: center">
+					<h2 style="color:white">VISION</h2><br>
+					<h3>All round development of the Students<br>
+					ಮಕ್ಕಳ ಸರ್ವಾಂಗೀಣ ಅಭಿವೃದ್ಧಿ</h3>
+  </div>
+  <div class="obj">
+    <h2>OBJECTIVES</h2><br>
+		<ul>
+      <li>The school aims to provide quality and value based education to the children of rural areas and lower economic class people.</li>
+      <li>The stand-out feature of this school is the inculation of culture and values in the personality of students and make them better citizens.</li>
+      <li>Apart from education, the school also promotes the overall development of the children in several other fields like Sports(Kabaddi,Volleyball)etc.</li>
+    </ul>
+    </div>
+	</div>
+	</section>
+</section>
+<section id="about">
+    <div class="AboutUs">
+		<h2>ABOUT</h2><br>
+		<img src="C:\Users\Lenovo\Documents\shruthi\java\images\school5.jpeg" alt="school">
+			<br>
+			<p><b style="font-size:20px;">G</b>overnment Kannada Higher Primary School No.26,Belagavi,was founded in 1980.<br><br>
+        Our school provides education for students from 1st std to 8th std.It has both Kannada as well as English medium, which helps
+        the students to understand the concepts easily in their mother tongue as well as develops their listening,reading and writing skills in English.<br>
+       <br>Everyday, the school begins with daily assembly, consisting of prayer after which the regular
+        classes begin.During games period,the students can play a variety of  indoor as well as outdoor sports.<br>
+        <br>The Number of faculties in the Teaching department are 10.The current Head Mistress is<b> Mrs. R.N Belgaonkar.</b>
+        The total number of students for the current academic year 2022-23 sums up to 316.<br>The detailed analysis is given below:
+		<h3 style="color:white">The Number of students per class</h3>
+		<br></br>
+		<table>
+			<tr style="font-size: 20px">
+				<th>Standard</th>
+				<th>No. of Boys</th>
+				<th>No. of Girls</th>
+				<th>Total</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>22</td>
+				<td>22</td>
+				<td>44</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>18</td>
+				<td>24</td>
+				<td>42</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>15</td>
+				<td>9</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>15</td>
+				<td>23</td>
+				<td>38</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>19</td>
+				<td>21</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>18</td>
+				<td>33</td>
+				<td>51</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>19</td>
+				<td>19</td>
+				<td>38</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>25</td>
+				<td>14</td>
+				<td>39</td>
+			</tr>
+			<tr style="font-size: 20px" >
+			<th>Total</th>
+      <th>151</th>
+      <th>165</th>
+      <th>316</th>
+			</tr>
+		</table>
+    </div>
+</section>
+
+<section id="facilities">
+    <div>
+      <h2>FACILITIES</h2>
+      <p>Sports facility such as <b>volleyball court,dumbell set,carrom board,sevenstones(lagori)</b>
+,both indoor and outdoor games facilities also students are getting.</p><br>
+    </div>
+</section>
+
+<section id="achievements">
+    <div class="achieve">
+      <h2>ACHIEVEMENTS</h2><br>
+      <p>Our school is extremely proud of the outstanding results obtained by the students of all classes
+        of the academic year 2021-22 as the meticulous work of students,Head Mistress and staff has paid off.</p><br>
+      <p style="padding-left: 25%;">The students proceeded with their victorious streak with 100% results.</b><br>
+      The detailed analysis of the students' results is given below:</p>
+    </div>
+      <br><h3 style="text-align: center">Total Number of students appeared and passed in Final Exam class-wise</h3><br><br>
+      <table>
+        <tr style="font-size: 20px">
+          <th>Class</th>
+          <th>No of boys appeared</th>
+          <th>No of girls appeared</th>
+          <th>Total students appeared</th>
+          <th>Total students passed</th>
+        </tr>
+      <tr>
+        <td>1</td>
+        <td>24</td>
+        <td>28</td>
+        <td>52</td>
+        <td>52</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>12</td>
+        <td>08</td>
+        <td>20</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>09</td>
+        <td>15</td>
+        <td>24</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>10</td>
+        <td>11</td>
+        <td>21</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>12</td>
+        <td>14</td>
+        <td>26</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>20</td>
+        <td>14</td>
+        <td>34</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>21</td>
+        <td>09</td>
+        <td>30</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>26</td>
+        <td>29</td>
+        <td>55</td>
+        <td>55</td>
+      </tr>
+      <tr style="font-size: 20px">
+        <th>Total</th>
+        <th>134</th>
+        <th>128</th>
+        <th>262</th>
+        <th>262</th>
+      </tr>
+      </table>
+      <div>
+        In the Sports category, 
+      </div>
+</section>
+<section id="admission">
+  <div>
+
+ 
+</section>
+
+<section id="contact" style="background-color: #f2f2f2">
+      <div class="contactUs">
+      <img src="https://media.istockphoto.com/id/1365543480/video/contact-us-concept.jpg?s=640x640&k=20&c=G16GzQ4uJKlITww2ArmKNB9UKb1-IT2eyJrUxkUmAIY=" class="contactImage" alt="contact us">
+      </div>
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h3 class="card-title">EMAIL</h3>
+            <p class="card-body" style="text-align: center">wajantrib@gmail.com</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h3 class="card-title">PHONE NUMBERS</h3>
+          <p class="card-body" style="text-align: center">+91 9986746098
+            <br>+91 9845117932</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="address">
+        <div class="card">
+        <h3 class="card-title">ADDRESS</h3>
+          <address class="card-body">Govt. Kannada Higher Primary School No. 26<br>
+  Vishweshwaraya Nagar, Sadashiv Nagar, Belagavi, Karnataka - 590019</address>
+</div>
+</div>
+<div style="margin-top: 5%">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1501.5162020342977!2d74.50642094574552!3d15.874287372583137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf61534dab4a75%3A0x95b1374f070fa1ff!2sNo%2026%20Vishweshwaraya%20School!5e0!3m2!1sen!2sin!4v1677325209397!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</section>
+<button class="scrollToTopBtn">^</button> 
+<footer></footer>
+
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+    // We select the element we want to target
+    var target = document.querySelector("footer");
+
+var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+var rootElement = document.documentElement;
+
+// Next we want to create a function that will be called when that element is intersected
+function callback(entries, observer) {
+  // The callback will return an array of entries, even if you are only observing a single item
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Show button
+      scrollToTopBtn.classList.add("showBtn");
+    } else {
+      // Hide button
+      scrollToTopBtn.classList.remove("showBtn");
+    }
+  });
+}
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);
+
+// Next we instantiate the observer with the function we created above. This takes an optional configuration
+// object that we will use in the other examples.
+let observer = new IntersectionObserver(callback);
+// Finally start observing the target element
+observer.observe(target);
+      </script>      
+     </body>
+</html>
