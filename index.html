@@ -233,6 +233,54 @@ p{
   padding-left: 15%;
   text-align: justify;
 }
+div.gallery img {
+  width: 100%;
+  height: 90%;
+}
+div.gallery1 img {
+  width: 125%;
+  height: auto;
+}
+
+.responsive {
+  padding: 0 6%;
+  float: left;
+  width:50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#gallery img{
+  width: 50%; 
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.achievepic1 img {
+  width: 130%;
+  height: auto;
+}
+.achievepic img {
+  width: 100%;
+  height: 75%;
+  
+}
+
     </style>
     </head>
     <body>
@@ -250,6 +298,7 @@ p{
                         <li><a  href="#facilities">Facilities</a></li>
                         <li ><a href="#achievements">Achievements</a></li>
                         <li ><a  href="#admission">Admission</a></li>
+                        <li ><a  href="#gallery">Gallery</a></li>
                         <li ><a  href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
@@ -262,28 +311,44 @@ p{
 	<div class="Home">
     <div class="slideshow-container">
     <div class="mySlides fade">
-      <div class="numbertext">1 / 4</div>
+      <div class="numbertext">1 / 7</div>
       <img src="https://user-images.githubusercontent.com/116060026/222919900-3496170f-32da-4117-973c-16813db8d172.jpeg" style="width:100%">
     </div>
     
     <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
+      <div class="numbertext">2 / 7</div>
       <img src="https://user-images.githubusercontent.com/116060026/222919912-1d808796-54a7-4b0a-b434-6cb90a41698d.jpeg" style="width:100%">
     </div>
     
     <div class="mySlides fade">
-      <div class="numbertext">3 / 4</div>
+      <div class="numbertext">3 / 7</div>
       <img src="https://user-images.githubusercontent.com/116060026/222919916-bb14c141-e49c-4f1d-8f51-adb1c75b1b4d.jpeg" style="width:100%">
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">4 / 4</div>
+        <div class="numbertext">4 / 7</div>
         <img src="https://user-images.githubusercontent.com/116060026/222919922-b4c9a009-f03a-45d0-a62c-892726fcfe21.jpeg" style="width:100%">
       </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 7</div>
+        <img src="https://user-images.githubusercontent.com/116060026/224293097-d7e215ee-af75-4721-a355-dfb1725a995c.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 7</div>
+        <img src="https://user-images.githubusercontent.com/116060026/224293152-b6927f88-d745-4977-8222-e6d6000bc6fa.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 7</div>
+        <img src="https://user-images.githubusercontent.com/116060026/224293066-41b620ad-fed8-4556-82e5-8d7efc3d4f85.jpeg" style="width:100%">
+      </div>
+      
     </div>
     <br>
     
     <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
       <span class="dot"></span> 
       <span class="dot"></span> 
       <span class="dot"></span> 
@@ -388,11 +453,28 @@ p{
 </section>
 
 <section id="facilities">
-    <div>
-      <h2>FACILITIES</h2>
-      <p>Sports facility such as <b>volleyball court,dumbell set,carrom board,sevenstones(lagori)</b>
-,both indoor and outdoor games facilities are available for all the students.</p><br>
+  <h2>FACILITIES</h2><br><br>
+  <div class="responsive">
+    <div class="gallery1">
+        <img src="https://user-images.githubusercontent.com/116060026/224292993-b918d8e2-576a-41a2-b370-2840c4496a7d.jpeg" alt="playground">
     </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb2UK-JmiK7564Q4hCpWw6r_NEyYtLU2VoZQ&usqp=CAU" alt="playground">
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div style="padding-top:3%">
+    <p>Our school consists of a huge playground with both indoor and outdoor sports facilities such as
+      <b>volleyball court,dumbell set,carrom board,sevenstones(lagori).</b>
+      </p><br>
+  </div>
+  <br><p><b>Library</b> is available which consists of several academic as well as recreational books
+     for the students.</p><br>
+  <br><p>Our school provides<br>1. free books,<br>2. shoes and <br>3. food like milk,eggs etc.</p><br>
+  <br><p>Additionally,<b>Mid-day meals</b> are also provided to the students by the NGO,SAMRUDHI SERVICE SOCIETY,Belagavi.</p>
 </section>
 
 <section id="achievements">
@@ -480,6 +562,21 @@ p{
       <div style="color:coral;text-align: center;font-size: 17px;border-style: dotted">SPORTS</div><br>
       <H4 style="text-align: center;padding-right:15%;padding-left: 15%;">BOYS OF OUR SCHOOL GOT SELECTED AND WON AT THE <mark>TALUKA LEVEL KABBADDI COMPETITION.</mark><br><br>
       ALSO, IN THE<mark> STATE LEVEL WRESTLING COMPETITION</mark> OUR BOYS BROUGHT GLORY TO OUR SCHOOL BY WINNING IT.</H4><br><br>
+      <div style="color:coral;text-align: center;font-size: 17px;border-style: dotted">COMPETITIONS</div><br>
+      <div class="responsive">
+        <div class="achievepic1">
+            <img src="https://user-images.githubusercontent.com/116060026/224293879-be8554da-226e-4fb1-a05c-79dbff729178.jpeg">
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="achievepic">
+            <img src="https://user-images.githubusercontent.com/116060026/224293857-9591d475-bab1-49f1-aee6-0a256ac1be9d.jpeg">
+        </div>
+      </div>
+      <div class="clearfix"></div><br><br>
+      <H3 style="text-align: center;padding-right:15%;padding-left: 15%;">Our school students secured <mark>FIRST PLACE</mark>in  'VAAKOVAAKYAM'
+      ,a Science quiz competition conducted by Agastya Foundation.</H3><br>
       <div style="color:coral;text-align: center;font-size: 17px;border-style: dotted">COMPETITIVE EXAMS</div><br>
       <H3 style="text-align: center;padding-right:15%;padding-left: 15%;">Three students of Eighth std wrote and passed the NMMS exam.</H3><br>
       <p style="text-align: center"><em>ABOUT NMMS(National Means Cum-Merit Scholarship) EXAM:</em><br>
@@ -511,6 +608,14 @@ p{
   </div><br>
     <p style="text-align: center">For further information,please refer 'contact us' section to contact us.</p>
 </section><br><br>
+
+<section id="gallery">
+  <h2>GALLERY</h2>
+  <img src="https://user-images.githubusercontent.com/116060026/224293685-52f081f8-7895-4af2-84da-ad2a732ccc7b.jpeg">
+  <img src="https://user-images.githubusercontent.com/116060026/224293764-21792cc3-b83f-4e82-a00f-e8ba3ca44e7b.jpeg" style="padding-top: 5%">
+  <img src="https://user-images.githubusercontent.com/116060026/224490759-adfef480-7fa6-4ab0-a558-81fbb84cb68c.jpeg" style="padding-top: 5%">
+  <img src="https://user-images.githubusercontent.com/116060026/224293830-13d3ba72-1539-40d6-bb8d-772a3ce3e2b3.jpeg" style="padding-top: 5%">
+</section>
 <section id="contact" style="background-color: #f2f2f2">
       <div class="contactUs">
       <img src="https://media.istockphoto.com/id/1365543480/video/contact-us-concept.jpg?s=640x640&k=20&c=G16GzQ4uJKlITww2ArmKNB9UKb1-IT2eyJrUxkUmAIY=" class="contactImage" alt="contact us">
@@ -564,23 +669,17 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  setTimeout(showSlides, 5000); 
 }
-    // We select the element we want to target
     var target = document.querySelector("footer");
 
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 var rootElement = document.documentElement;
-
-// Next we want to create a function that will be called when that element is intersected
 function callback(entries, observer) {
-  // The callback will return an array of entries, even if you are only observing a single item
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      // Show button
       scrollToTopBtn.classList.add("showBtn");
     } else {
-      // Hide button
       scrollToTopBtn.classList.remove("showBtn");
     }
   });
@@ -593,11 +692,7 @@ function scrollToTop() {
   });
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
-
-// Next we instantiate the observer with the function we created above. This takes an optional configuration
-// object that we will use in the other examples.
 let observer = new IntersectionObserver(callback);
-// Finally start observing the target element
 observer.observe(target);
       </script>      
      </body>
