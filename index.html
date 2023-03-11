@@ -17,37 +17,34 @@
             font-family:'Poppins',sans-serif;
             background-color:white;
         }
-        nav{
-            display:flex;
-            flex-direction:row;
-            justify-content:space-between;
-            align-items:center;
-            padding: 1vw 8vw;
-            box-shadow:2px 2px 10px rgb(0,0,0,0.15);
-        }
-        nav img{
-            width:150px;
-            cursor:pointer;
-        }
-        nav .navigation ul{
-            display:flex;
-            justify-content:flex-end;
-            align-items: center;
-        }
-        nav .navigation ul li{
-            list-style:none;
-            margin-left:30px;
-        }
-        nav .navigation ul li a{
-            text-decoration:none;
-            color:rgb(21,21,100);
-            font-size:20px;
-            font-weight:500;
-            transition:0.3s ease;
-        }
-        nav .navigation ul li a:hover{
-            color:blue;
-        }
+        ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
         .heading{
             margin: auto;
             text-align: center;
@@ -289,11 +286,9 @@ div.gallery1 img {
             Admissions open at Govt. Kannada Higher Primary School No. 26,Belagavi for 1st std to 8th std.For more information, refer 'Admission' section and 'Contact us' section for contact information.
             </marquee>
         </header>
-        <nav>
-            <img src="https://user-images.githubusercontent.com/116060026/222919887-574062d3-edc7-40c3-b483-f39c34d84187.jpeg" width="180px" height="100px" alt="School-WebSite">
-                <div class="navigation">
-                     <ul>
-                        <li><a href="#home">Home</a></li>
+            <!--<img src="https://user-images.githubusercontent.com/116060026/222919887-574062d3-edc7-40c3-b483-f39c34d84187.jpeg" width="180px" height="100px" alt="School-WebSite">-->
+                     <ul class="topnav">
+                        <li><a class="active" href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a  href="#facilities">Facilities</a></li>
                         <li ><a href="#achievements">Achievements</a></li>
@@ -301,12 +296,10 @@ div.gallery1 img {
                         <li ><a  href="#gallery">Gallery</a></li>
                         <li ><a  href="#contact">Contact Us</a></li>
                     </ul>
-                </div>
-        </nav>
             <div class="heading">
             <h1 >Govt. Kannada Higher Primary School No. 26<br></h1>
             <h3>Vishweshwaraya Nagar, Sadashiv Nagar, Belagavi, Karnataka - 590019</h3> 
-            </div>
+          </div>
 <section id="home">
 	<div class="Home">
     <div class="slideshow-container">
@@ -669,17 +662,23 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); 
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+    // We select the element we want to target
     var target = document.querySelector("footer");
 
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 var rootElement = document.documentElement;
+
+// Next we want to create a function that will be called when that element is intersected
 function callback(entries, observer) {
+  // The callback will return an array of entries, even if you are only observing a single item
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
+      // Show button
       scrollToTopBtn.classList.add("showBtn");
     } else {
+      // Hide button
       scrollToTopBtn.classList.remove("showBtn");
     }
   });
@@ -692,7 +691,11 @@ function scrollToTop() {
   });
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
+
+// Next we instantiate the observer with the function we created above. This takes an optional configuration
+// object that we will use in the other examples.
 let observer = new IntersectionObserver(callback);
+// Finally start observing the target element
 observer.observe(target);
       </script>      
      </body>
